@@ -29,7 +29,6 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Run ${{ matrix.job }}
-        id: ${{ matrix.job }}
         uses: john0isaac/action-check-markdown@v1.0.6
         with:
           command: ${{ matrix.job }}
