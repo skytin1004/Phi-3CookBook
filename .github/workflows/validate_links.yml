@@ -3,13 +3,13 @@ name: Validate Documentation Links
 on:
   pull_request_target:
     branches:
-      - main
+      - modify-broken-path
     paths:
       - '**.md'
       - '**.ipynb'
   push:
     branches:
-      - main
+      - modify-broken-path
 
 permissions:
   contents: read
